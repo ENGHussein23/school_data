@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
+  badges: ^3.1.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -83,6 +84,9 @@ flutter:
     - family: BalooBhaijaan2
       fonts:
         - asset: assets/fonts/BalooBhaijaan2-VariableFont_wght.ttf
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo.ttf
     - family: Harmattan
       fonts:
         - asset: assets/fonts/Harmattan/Harmattan-Bold.ttf

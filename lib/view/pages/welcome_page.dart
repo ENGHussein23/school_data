@@ -20,7 +20,7 @@ class WelcomePage extends StatelessWidget{
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           SizedBox(height: 120,),
-          Text("اهلاَ بك",style: TextStyle(fontSize: 55,fontWeight: FontWeight.w900,color: Colors.white,fontFamily: 'Harmattan',),),
+          Text("اهلاَ بك",style: TextStyle(fontSize: 55,fontWeight: FontWeight.w900,color: Colors.white),),
           SizedBox(height: 120,),
           ElevatedButton(onPressed: (){
             Get.toNamed("/LoginPage");
@@ -37,7 +37,7 @@ class WelcomePage extends StatelessWidget{
               borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
 
-          ), child: Text("تسجيل الدخول",style:TextStyle(fontSize: 30,fontWeight: FontWeight.w700,fontFamily: 'Harmattan',),)),
+          ), child: Text("تسجيل الدخول",style:TextStyle(fontSize: 20,fontWeight: FontWeight.w700),)),
           SizedBox(height: 100,),
         ],
       ),

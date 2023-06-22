@@ -20,32 +20,39 @@ class LoginPage extends StatelessWidget{
        child: Column(
          crossAxisAlignment: CrossAxisAlignment.start,
          children: [
-           Text("تسجيل الدخول",style:TextStyle(fontSize: 30,fontWeight: FontWeight.w700,color:Colors.white,fontFamily: 'Harmattan',),),
-           SizedBox(height: 200,),
+           Text("تسجيل الدخول",style:TextStyle(fontSize: 25,fontWeight: FontWeight.w700,color:Colors.white),),
+           SizedBox(height: screenHeight*0.2,),
            Container(
-             child: Column(
-               textDirection: TextDirection.rtl,
+             child: ListView(
+               shrinkWrap: true,
+               // textDirection: TextDirection.rtl,
                children: [
                  Directionality(textDirection: TextDirection.rtl,
                      child: TextFormField(
-                   decoration: const InputDecoration(
-                     label: Text("البريد الإلكتروني"),
-                       prefixIcon: Icon(Icons.person_outline_outlined)
+                   decoration:  InputDecoration(
+                     label: Text("البريد الإلكتروني",style: TextStyle(color: Colors.black)),
+                       prefixIcon: Icon(Icons.person_outline_outlined,color: Colors.black),
+                     contentPadding: EdgeInsets.symmetric(vertical: 0.0),
+                     enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.black),),
                    ),
+
                  )),
+                 SizedBox(height: 10,),
                  Directionality(textDirection: TextDirection.rtl,
                      child: TextFormField(
-                       decoration: const InputDecoration(
-                           label: Text("كلمة المرور"),
-                           prefixIcon: Icon(Icons.lock_outline)
+                       decoration:  InputDecoration(
+                           label: Text("كلمة المرور",style: TextStyle(color: Colors.black)),
+                           prefixIcon: Icon(Icons.lock_outline,color: Colors.black),
+                         contentPadding: EdgeInsets.symmetric(vertical: 0.0),
+                         enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.black),),
                        ),
                      )),
-                 SizedBox(height: 30,),
+                 const SizedBox(height: 30,),
                  Row(
                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                    children: [
                      SizedBox(
-                       height: 50,
+                       height: 45,
                        child: DecoratedBox(
                            decoration: BoxDecoration(
                                gradient: const LinearGradient(
@@ -76,12 +83,12 @@ class LoginPage extends StatelessWidget{
                                    top: 2,
                                    bottom: 2,
                                  ),
-                                 child:Text("تسجيل الدخول",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w900),),
+                                 child:Text("تسجيل الدخول",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w900),),
                                )
                            )
                        ),
                      ),
-                     TextButton(onPressed: (){}, child: Text("نسيت كلمة المرور؟",style: TextStyle(fontSize: 20,color: Colors.grey,fontWeight: FontWeight.w900),))
+                     TextButton(onPressed: (){}, child: Text("نسيت كلمة المرور؟",style: TextStyle(fontSize: 17,color: Colors.grey,fontWeight: FontWeight.w900),))
                    ],
                  )
                ],

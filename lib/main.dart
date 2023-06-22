@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:school_data/view/pages/badge_page.dart';
+import 'package:school_data/view/pages/challenge_completed.dart';
 import 'package:school_data/view/pages/home_page.dart';
 import 'package:school_data/view/pages/login_page.dart';
 import 'package:school_data/view/pages/opening_page.dart';
+import 'package:school_data/view/pages/personal_information.dart';
 import 'package:school_data/view/pages/welcome_page.dart';
 
 void main() {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'BalooBhaijaan2',
+        fontFamily: 'Cairo',
         primarySwatch: Colors.blue,
       ),
       initialRoute: "/",
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/LoginPage", page:()=>LoginPage()),
         GetPage(name: "/HomePage", page:()=>HomePage()),
         GetPage(name: "/BadgePage", page:()=>BadgePage()),
+        GetPage(name: "/ChallengeCompleted", page:()=>ChallengeCompleted()),
+        GetPage(name: "/PersonalInformation", page:()=>PersonalInformation()),
       ],
       // home: HomePage(),
     );

@@ -17,13 +17,13 @@ class BadgePage extends StatelessWidget{
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.only(top: 30,left: 40,right: 40),
+              padding: EdgeInsets.only(top: 50,left: 40,right: 40),
               width: screenWidth,
-              height: screenHeight*0.63,
+              height: screenWidth*1.071,
               decoration:  const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/frame5.png'),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -54,7 +54,7 @@ class BadgePage extends StatelessWidget{
                     )
                   ],),
                   SizedBox(
-                    height: screenHeight*0.1,
+                    height: 40,
                   ),
                   Align(
                     alignment: Alignment.bottomLeft,
@@ -67,9 +67,9 @@ class BadgePage extends StatelessWidget{
              padding: EdgeInsets.only(top:10,right: 35),
              child: Column(
                children: [
-                 ConditionLine("الإستمرار على الصلاة"),
-                 ConditionLine("وصف التحدي"),
-                 ConditionLine("كيفية الحصول عليه"),
+                 ConditionLine("الإستمرار على الصلاة",(){}),
+                 ConditionLine("وصف التحدي",(){print("وصف التحدي");}),
+                 ConditionLine("كيفية الحصول عليه",(){print("كيفية الحصول عليه");}),
                ],
              ),
            ))

@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 List<String> badges_test=[
   "assets/images/badges/earned/1.png",
   "assets/images/badges/earned/2.png",
@@ -25,3 +27,32 @@ List<String> badges_test=[
   "assets/images/badges/not_earned/24.png",
   "assets/images/badges/not_earned/25.png",
 ];
+List<String> earned_badges_test=[
+  "assets/images/badges/earned/1.png",
+  "assets/images/badges/earned/2.png",
+  "assets/images/badges/earned/3.png",
+  "assets/images/badges/earned/4.png",
+  "assets/images/badges/earned/5.png"];
+List<String> not_earned_badges_test=[
+  "assets/images/badges/not_earned/6.png",
+  "assets/images/badges/not_earned/7.png",
+  "assets/images/badges/not_earned/8.png",
+  "assets/images/badges/not_earned/9.png",
+  "assets/images/badges/not_earned/10.png",
+  "assets/images/badges/not_earned/11.png",
+  "assets/images/badges/not_earned/12.png",
+  "assets/images/badges/not_earned/13.png",
+  "assets/images/badges/not_earned/14.png",
+  "assets/images/badges/not_earned/15.png",
+  "assets/images/badges/not_earned/16.png",
+  "assets/images/badges/not_earned/17.png",
+  "assets/images/badges/not_earned/18.png",
+  "assets/images/badges/not_earned/19.png",
+  "assets/images/badges/not_earned/20.png",
+  "assets/images/badges/not_earned/21.png",
+  "assets/images/badges/not_earned/22.png",
+  "assets/images/badges/not_earned/23.png",
+  "assets/images/badges/not_earned/24.png",
+  "assets/images/badges/not_earned/25.png",];
+var test_color=Color.fromARGB(255, 0, 159, 227);
+var check_box_color=Color.fromARGB(255, 201, 232, 251);

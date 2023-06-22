@@ -11,7 +11,9 @@ class BadgeItem extends StatelessWidget{
       onTap: onPressed,
       child:  Container(
         padding: const EdgeInsets.all(5),
-        child: Image(image: AssetImage(image),height: 70,width: 70,fit: BoxFit.contain,),
+        child: Image(image: AssetImage(image),
+          height: 80,width: 80,
+          fit: BoxFit.cover,),
       ),
     );
   }
